@@ -210,10 +210,10 @@ jobs:
           path: ${{ env.DESTDIR }}
           pattern: buildkit-*
           merge-multiple: true
-      -
-        name: List artifacts
-        run: |
-          tree -nh ${{ env.DESTDIR }}
+      # -
+      #   name: List artifacts
+      #   run: |
+      #     tree -nh ${{ env.DESTDIR }}
       -
         name: GitHub Release
         if: startsWith(github.ref, 'refs/tags/v')
