@@ -42,8 +42,8 @@ jobs:
 
       - 
         name: Install jq
-        run: apt-get update && \
-             apt-get -y install jq
+        run: sudo  apt-get update && \
+             sudo apt-get -qy install jq
       -
         name: Prepare
         id: prep
